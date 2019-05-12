@@ -1,3 +1,127 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.location-details-container {
+  text-align: center;
+  padding: 10px 30%;
+}
+
+
+.nav-center {  
+  text-align: center;
+  margin-bottom: -6px;
+  ul.nav {
+    display: inline-block;
+    li {
+      display: inline
+      a {
+        float: left
+      }
+    }
+  }
+}
+
+
+.nav-tabs li a{
+	color: black !important	;
+	background: white !important;
+  border: 1.5px solid #b8b8b852 !important;
+  border-bottom: none !important;
+	border-radius: 0px !important;
+	padding: 10px 25px !important;
+	margin: 0px 4px;			
+}
+
+.nav-tabs li.active a{
+	color: black !important	;
+	background: #f6f6f6 !important;
+}
+
+.tab-package{
+  padding: 30px 10%;
+  background: #f6f6f6;
+	.first-package-menu{
+		padding-bottom: 30px;
+		background: #ffffff;
+		.package-details{
+			padding: 10px 90px 10px 10px;
+		}
+	}  
+}	
+
+.featured-guides-container{
+  padding: 10px 5%;
+	.featured-guideItem-container {
+	    padding: 0% 5%;
+			border: 1.5px solid #b8b8b852;
+			.cost-box{
+				text-align:right;
+				.cost{
+					font-size: 22px;
+    			color: #4f7df1;
+    			font-weight: 600;
+				}
+				.per-person{
+					font-size: 12px;
+			    font-weight: 600;
+			    color: #a6aaad;
+				}
+				.package-inclusions{
+					color: #00b41b;
+			    font-weight: 700;
+			    overflow-wrap: break-word;
+				}
+			}
+	}
+	.featured-guideItem-container:not(:last-child) {
+		border-bottom: none;
+	}
+}
+
+.faqs-and-reviews{
+	padding: 40px;
+	.accordion{
+		.card{
+			border-right: none;
+		  border-left: none;
+			.card-header{
+		    background: white;
+		    .btn-link, .btn-link:focus{
+		    	font-size: 18px;
+    			font-weight: 600;
+    			border: none !important;
+    			text-decoration-style: none;
+		    }
+			}		
+		}
+	}
+
+	.carousel-inner {
+		background: #e6e6e6;
+		.item{
+			.review-content {
+	    	padding: 20px 70px 70px 70px;
+			}
+		}
+	}
+
+	a.left.carousel-control, a.right.carousel-control{
+    background-image: none;
+	}
+
+	span.glyphicon{
+		color: #0154e0;
+	}
+}
+
+
+.from-the-magazine{
+	padding: 10px 10% !important;
+  font-size: 15px;
+  font-weight: 600;
+  img{
+  	margin-bottom: 5px;
+  }
+}
