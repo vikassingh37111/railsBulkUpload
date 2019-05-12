@@ -3,32 +3,40 @@
   <head>
     <title>Demoapp</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 px-5 mb-0">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">BrandName</a>
+        <a class="navbar-brand px-5" href="#">
+          <img src="logo.jpg" alt="SeekSophie" style="width:140px;margin:-60px 10px 0px 80px;">
+        </a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">DESTINATION</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Another Page</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">HIKING</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled Page</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">WILDLIFE</a>
           </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">DIVING</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">CULTURE</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">MAGAZINE</a>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0 pull-right">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Search</button>  
           <div class="mr-1"><%= current_user.try :email %></div>
           <% if user_signed_in? %>
             <%= link_to "Logout", destroy_user_session_path, :method => :delete, :class => "btn btn-outline-success btn-loginout my-2 my-sm-0", :type => "submit" %>
@@ -38,14 +46,11 @@
         </form>
       </div>
     </nav>
-    <div class="container">
-    	<% if user_signed_in? %>
-    		<h3>Logged in as 
-    			<%= current_user.email %>
-      	</h3>
-      <% end %>
-      
-      <%= yield %>
-    </div>
+    <%= yield %>
   </body>
 </html>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
