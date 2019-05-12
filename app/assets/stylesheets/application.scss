@@ -108,7 +108,7 @@
 	}
 
 	.carousel-inner {
-		background: #e6e6e6;
+		background: #f6f6f6;
 		.item{
 			.review-content {
 	    	padding: 20px 70px 70px 70px;
@@ -130,7 +130,15 @@
 	padding: 10px 10% !important;
   font-size: 15px;
   font-weight: 600;
-  img{
-  	margin-bottom: 5px;
+  background: #f6f6f6;
+  .image-box{
+  	background: white;
+	  img{
+	  	margin-bottom: 5px;
+	  }  
+	  p{
+	  	padding: 5px 10px;
+	  }
   }
+
 }
