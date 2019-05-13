@@ -16,3 +16,9 @@
 //= require popper
 //= require bootstrap
 //= require_tree .
+
+
+$(document).ready(function(){
+	let gmap = '<iframe src="https://maps.google.com/maps?q=Madryt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	$('#map-container').html(gmap);
+});
