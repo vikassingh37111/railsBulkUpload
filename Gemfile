@@ -68,3 +68,4 @@ gem 'bootstrap', '~> 4.0'
 # Adding postgres for DB
 gem 'pg'
 gem 'rails_12factor'
+gem 'activerecord-import'

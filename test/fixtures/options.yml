@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  option_number: MyString
+  sequence: 1
+  text: MyText
+  question: one
+  correct: false
+  created_by: 1
+  updated_by: 1
+
+two:
+  option_number: MyString
+  sequence: 1
+  text: MyText
+  question: two
+  correct: false
+  created_by: 1
+  updated_by: 1
